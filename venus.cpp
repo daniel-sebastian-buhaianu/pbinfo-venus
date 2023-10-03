@@ -43,12 +43,9 @@ int main()
 
 	int comenziFinalizate[nrComenzi], comenziOmise[nrComenzi], nrComenziFinalizate, nrComenziOmise, pierdere;
 
-	nrComenziFinalizate = 1;
-	comenziFinalizate[nrComenziFinalizate-1] = comenzi[0].nr;
+	nrComenziFinalizate = nrComenziOmise = pierdere = 0;
 
-	nrComenziOmise = pierdere = 0;
-
-	for (i = 1; i < nrComenzi; i++)
+	for (i = 0; i < nrComenzi; i++)
 	{
 		if (nrComenziFinalizate + 1 <= comenzi[i].indiceExecutie)
 		{
@@ -143,4 +140,4 @@ bool comparValoareaComenzilor(comanda a, comanda b)
 
 	return false;
 }
-// scor 35
+// scor 50
